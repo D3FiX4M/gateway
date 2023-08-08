@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_package = "ru.microservices.proto";
+
+option java_multiple_files = true;
+
+// COMMON
+import "google/protobuf/empty.proto";
+
+
+// REQUESTS
+import "user_service/request/UserByIdsRequest.proto";
+
+
+// RESPONSES
+import "user_service/response/UserListResponse.proto";
+
+
+
+service UserService{
+  rpc getUserById(UserByIdsRequest) returns (UserListResponse){}
+  rpc getAllUser(google.protobuf.Empty) returns(UserListResponse){}
+}
+

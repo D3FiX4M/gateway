@@ -1,0 +1,20 @@
+spring:
+  main:
+    banner-mode: off
+
+
+server:
+  port: 8080
+
+instance:
+  key: gateway
+  id: 1
+
+grpc:
+  client:
+    user-service:
+      address: localhost
+      port: 9091
+
+
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.mxL6mU1Exptra9FQPUuFfGTlUjroSK1VOBNRArco9No
