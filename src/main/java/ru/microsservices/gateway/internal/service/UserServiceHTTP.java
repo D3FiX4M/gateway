@@ -14,7 +14,6 @@ import java.util.List;
 public class UserServiceHTTP {
 
 
-
     private final UserMapper mapper;
     private final UserService userService;
 

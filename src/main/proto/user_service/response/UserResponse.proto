@@ -5,6 +5,6 @@ option java_multiple_files = true;
 
 import "user_service/model/UserModel.proto";
 
-message UserListResponse{
-  repeated UserModel users = 1;
+message UserResponse{
+  UserModel user = 1;
 }
