@@ -1,0 +1,20 @@
+syntax = "proto3";
+package ru.microservices.authentication_service;
+option java_multiple_files = true;
+
+// REQUESTS
+import "authentication_service/request/CreateTokenRequest.proto";
+import "authentication_service/request/ValidateTokenRequest.proto";
+import "authentication_service/request/RefreshTokenRequest.proto";
+
+// RESPONSES
+import "authentication_service/response/TokenResponse.proto";
+import "authentication_service/response/ValidateTokenResponse.proto";
+
+
+service AuthenticationService{
+  rpc createToken(CreateTokenRequest) returns (TokenResponse){}
+  rpc validateToken(ValidateTokenRequest) returns (ValidateTokenResponse){}
+  rpc refreshToken(RefreshTokenRequest) returns (TokenResponse){}
+}
+

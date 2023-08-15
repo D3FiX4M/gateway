@@ -1,7 +1,5 @@
 syntax = "proto3";
-
-option java_package = "ru.microservices.proto";
-
+package ru.microservices.user_service;
 option java_multiple_files = true;
 
 

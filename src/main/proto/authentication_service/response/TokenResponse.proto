@@ -1,0 +1,9 @@
+syntax = "proto3";
+package ru.microservices.authentication_service;
+option java_multiple_files = true;
+
+message TokenResponse{
+  int64 user_id = 1;
+  string access_token = 2;
+  string refresh_token = 3;
+}
